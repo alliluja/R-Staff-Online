@@ -19,9 +19,16 @@
          <form class = Form>
             <fieldset>
                <legend>Добавить к наблюдению</legend>
-               <label><b>PersonID</b><em>*</em><input type="text" id="id" class = input></label>
-               <button class = "submitBTN" id = "addUser">Добавить</button><br>
-               <div class = "info">* Воспользуйтесь <a target = "_blank" href = "http://atlant/Staff/Search/"><b>поиском в Staff</b></a>, найдите нужного человека и перейдите к нему в профиль. Скопируйте сюда последние цифры из адресной строки</div>
+               <label class = info><input min="1" max="99999" type="number" id="id" class = input placeholder="PersonID">
+               <button class = "submitBTN" id = "addUser">Добавить</button>
+               <a href = "http://atlant/Staff/Search/">Поиск</a></label>
+            </fieldset>
+         </form>
+         <form class = Form id = configs>
+            <fieldset>
+               <legend>Другие настройки</legend>
+               <label><input class = "chb" type=checkbox id ="TrafficInspector">Показывать траффик</label>
+               <button class = "saveBTN" id = "saveConfig">Сохранить</button>
             </fieldset>
          </form>
       </div>

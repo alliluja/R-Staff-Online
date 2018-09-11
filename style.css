@@ -117,16 +117,15 @@ progress::-moz-progress-bar
    opacity           : 0.5;
 }
 
-.info
-{
-   font-size         : 10px;
-}
 
 .input
 {
    margin-left       : 10px;
+   margin-top        : 10px;
    width             : 100px;
-   text-align        : right;
+   text-align        : left;
+   -moz-appearance   : textfield;
+   display           : inline-block;
 }
 
 .chb
@@ -136,10 +135,17 @@ progress::-moz-progress-bar
    margin-right      : 10px;
 }
 
-.deleteBTN
+.deleteBTN,
+.saveBTN
 {
-   margin-left       : 210px;
+   width: 80px;
+   margin-left       : 220px;
    margin-top        : 10px;
+}
+
+.submitBTN
+{
+   width: 80px;
 }
 
 .Form
@@ -147,4 +153,9 @@ progress::-moz-progress-bar
    margin-left       : 10px;
    margin-right      : 10px;
    margin-top        : 10px;
+}
+
+legend
+{
+   margin-left: 10px;
 }

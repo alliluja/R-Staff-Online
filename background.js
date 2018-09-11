@@ -1,4 +1,11 @@
+var Storage = window.localStorage;
+const ON  = 1;
+const OFF = 0;
+
 OnLine = function(){
+   if (!Storage.getItem("TrafficInspector")) {
+      Storage.setItem("TrafficInspector", ON);
+   }
     url = "http://atlant/Staff/Person.aspx";
     xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
@@ -38,7 +45,7 @@ OnLine = function(){
         }
     }
 }
-OnLine(); //Чтоб сразу статус появлялся, а не через какое-то время
-window.onload = function() {//обновляем статус
+OnLine(); //я┐╜тоб я┐╜разя┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜явля┐╜я┐╜я┐╜, я┐╜ я┐╜я┐╜ я┐╜рез я┐╜я┐╜я┐╜я┐╜я┐╜-я┐╜ я┐╜ремя┐╜
+window.onload = function() {//я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜яем я┐╜я┐╜я┐╜я┐╜я┐╜
    window.setInterval(OnLine, 30000);
 }
