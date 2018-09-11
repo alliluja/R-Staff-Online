@@ -1,0 +1,30 @@
+<html>
+    <title>Staff OnLine Config</title>
+    <head>
+        <meta charset="windows-1251">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="conf.js"></script>
+    </head>
+    <body>
+      <div class = "top">R-Style Softlab</div>
+      <img class = logo src="icon.png" width="50" height="50">
+      <div id="main" class = "main">
+         <form class = Form id = "delForm">
+            <fieldset>
+               <legend>Перестать наблюдать</legend>
+               <div id = "fioList"></div>
+               <button class = "deleteBTN" id = "delUser">Удалить</button>
+            </fieldset>
+         </form>
+         <form class = Form>
+            <fieldset>
+               <legend>Добавить к наблюдению</legend>
+               <label><b>PersonID</b><em>*</em><input type="text" id="id" class = input></label>
+               <button class = "submitBTN" id = "addUser">Добавить</button><br>
+               <div class = "info">* Воспользуйтесь <a target = "_blank" href = "http://atlant/Staff/Search/"><b>поиском в Staff</b></a>, найдите нужного человека и перейдите к нему в профиль. Скопируйте сюда последние цифры из адресной строки</div>
+            </fieldset>
+         </form>
+      </div>
+      <div class = "bottom"><a href = "popup.html">Вернуться</a></div>
+    </body>
+</html>

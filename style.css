@@ -1,0 +1,150 @@
+*{
+   margin            : 0;
+   padding           : 0;
+}
+
+body
+{
+   font-family       : Verdana;
+   width             : 330px;
+   background        : url(main_bg.jpg);
+   background-size   : cover;
+   font-size         : 12px;
+}
+
+a:hover
+{
+   background-color  : rgba(0, 0, 0, 0.3);
+}
+
+.red,
+.green
+{
+   height            : 30px;
+}
+.red
+{
+   color             : red;
+}
+
+.green
+{
+   color             : green;
+}
+
+a
+{
+   text-decoration   : none;
+   height            : 100%;
+}
+
+progress
+{
+   padding-top: 15px;
+   position: absolute;
+   width: 100%;
+   height: 30px;
+   opacity: 0.5;
+   border: 0px;
+   background-color  : rgba(0, 0, 0, 0.2);
+}
+
+progress::-moz-progress-bar
+{
+   background-color  : rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+}
+.progress-value
+{
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+   font-size         : 10px;
+   height            : 45px;
+   width             : 100%;
+   background-color  : rgba(0, 0, 0, 0.2);
+   margin-bottom     : 30px
+}
+
+.red a
+{
+   display           : block;
+   color             : red;
+   padding-left      : 15px;
+   padding-top       : 5px;
+}
+
+.green a
+{
+   display           : block;
+   color             : green;
+   padding-left      : 15px;
+   padding-top       : 5px;
+}
+
+
+.top
+{
+   text-align        : center;
+   font-size         : 20px;
+   height            : 45px;
+   width             : 100%;
+   background-color  : rgba(0, 0, 0, 0.2);
+   margin-bottom     : 30px
+}
+
+.bottom
+{
+   margin-top        : 10px;
+   height            : 50px;
+   background-color  : rgba(0, 0, 0, 0.2);
+   text-align        : center;
+   font-size         : 20px;
+}
+
+.bottom a
+{
+   display           : block;
+   color             : black;
+}
+
+.logo
+{
+   position          : absolute;
+   top               : 20px;
+   left              : 40%;
+   text-align        : center;
+   opacity           : 0.5;
+}
+
+.info
+{
+   font-size         : 10px;
+}
+
+.input
+{
+   margin-left       : 10px;
+   width             : 100px;
+   text-align        : right;
+}
+
+.chb
+{
+   margin-left       : 20px;
+   margin-top        : 10px;
+   margin-right      : 10px;
+}
+
+.deleteBTN
+{
+   margin-left       : 210px;
+   margin-top        : 10px;
+}
+
+.Form
+{
+   margin-left       : 10px;
+   margin-right      : 10px;
+   margin-top        : 10px;
+}

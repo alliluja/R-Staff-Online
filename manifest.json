@@ -1,0 +1,22 @@
+﻿{
+    "manifest_version": 2,
+ 
+    "name": "R-Style Staff OnLine",
+    "description": "Кто на работе, остаток траффика",
+    "version": "1.1",
+ 
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "http://atlant/",
+        "http://inetstat/",
+        "storage"
+    ],
+    
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
