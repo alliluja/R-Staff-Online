@@ -12,32 +12,6 @@ body
    font-size         : 12px;
 }
 
-a:hover
-{
-   background-color  : rgba(0, 0, 0, 0.3);
-}
-
-.red,
-.green
-{
-   height            : 30px;
-}
-.red
-{
-   color             : red;
-}
-
-.green
-{
-   color             : green;
-}
-
-a
-{
-   text-decoration   : none;
-   height            : 100%;
-}
-
 progress
 {
    padding-top: 15px;
@@ -66,6 +40,25 @@ progress::-moz-progress-bar
    margin-bottom     : 30px
 }
 
+a:hover
+{
+   background-color  : rgba(0, 0, 0, 0.3);
+}
+
+.red,
+.green,
+.blue
+{
+   height            : 30px;
+}
+
+a
+{
+   text-decoration   : none;
+   height            : 100%;
+}
+
+
 .red a
 {
    display           : block;
@@ -82,6 +75,13 @@ progress::-moz-progress-bar
    padding-top       : 5px;
 }
 
+.blue a
+{
+   display           : block;
+   color             : blue;
+   padding-left      : 15px;
+   padding-top       : 5px;
+}
 
 .top
 {
@@ -116,7 +116,6 @@ progress::-moz-progress-bar
    text-align        : center;
    opacity           : 0.5;
 }
-
 
 .input
 {

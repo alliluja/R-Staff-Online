@@ -2,10 +2,17 @@ var Storage = window.localStorage;
 const ON  = 1;
 const OFF = 0;
 
-OnLine = function(){
-   if (!Storage.getItem("TrafficInspector")) {
+function isConfig() //здесь делать проверки всех настроек, если не существует - создать
+{
+   if (!Storage.getItem("TrafficInspector"))
+   {
       Storage.setItem("TrafficInspector", ON);
    }
+}
+
+OnLine = function()
+{
+    isConfig();
     url = "http://atlant/Staff/Person.aspx";
     xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
@@ -16,13 +23,13 @@ OnLine = function(){
         {
             if (xhr.responseText)
             {
-                data = xhr.responseText;
-                parser = new DOMParser();
-                xmlDoc = parser.parseFromString(data,"text/html");
-                tds = xmlDoc.getElementById("ImPlace");
+                data    = xhr.responseText;
+                parser  = new DOMParser();
+                xmlDoc  = parser.parseFromString(data,"text/html");
+                tds     = xmlDoc.getElementById("ImPlace");
                 if (tds != null) {
-                   var elems = tds.getElementsByTagName("img");
-                   var img = elems[0];
+                   var elems     = tds.getElementsByTagName("img");
+                   var img       = elems[0];
                    var lastChars = img.src.substr(img.src.length-2,2);
                    if ( lastChars == "=1")
                    {
@@ -38,14 +45,14 @@ OnLine = function(){
                 else
                 {
                   chrome.browserAction.setBadgeBackgroundColor({color:"#AA0000"});
-                  chrome.browserAction.setBadgeText({text: "err"});
+                  chrome.browserAction.setBadgeText({text: "Err!"});
                 }
                 
             }
         }
     }
 }
-OnLine(); //пїЅв®Ў пїЅа §пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпў«пїЅпїЅпїЅ, пїЅ пїЅпїЅ пїЅаҐ§ пїЅпїЅпїЅпїЅпїЅ-пїЅ пїЅаҐ¬пїЅ
-window.onload = function() {//пїЅпїЅпїЅпїЅпїЅпїЅпҐ¬ пїЅпїЅпїЅпїЅпїЅ
+OnLine();
+window.onload = function() {
    window.setInterval(OnLine, 30000);
 }
