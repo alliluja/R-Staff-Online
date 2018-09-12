@@ -1,3 +1,10 @@
+/*
+ * Плагин R-Style Staff OnLine
+ * Автор  Раков Вениамин 
+ * Дата   сентябрь 2018
+ * e-mail rvs2201@yandex.ru
+ */
+
 var Storage = window.localStorage;
 const ON  = 1;
 const OFF = 0;

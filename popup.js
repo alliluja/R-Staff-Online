@@ -1,3 +1,10 @@
+/*
+ * Плагин R-Style Staff OnLine
+ * Автор  Раков Вениамин
+ * Дата   сентябрь 2018
+ * e-mail rvs2201@yandex.ru
+ */
+
 function execFunc()
 {
    if (Storage.getItem(configArray[0]) == ON)
