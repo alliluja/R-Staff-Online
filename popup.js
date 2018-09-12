@@ -16,9 +16,8 @@ function execFunc()
    var mainDoc = document.getElementById('main');
    for(let i = 0; i < Storage.length; i++)
    {
-      var storageKey = Storage.key(i);
-      if (isUser(storageKey))
-      getData(urlPerson, storageKey, function(xmlDoc)
+      if (isUser(Storage.key(i)))
+      getData(urlPerson, Storage.key(i), function(xmlDoc)
       {
          var noDataDIV  = document.getElementById("noDataDIV");
          if (noDataDIV != null) noDataDIV.parentNode.removeChild(noDataDIV);
@@ -27,7 +26,7 @@ function execFunc()
          var img        = elems[0];
          var lastChars  = img.src.substr(img.src.length-2,2);
          var fioRow     = xmlDoc.getElementsByClassName("profile-table-row-value");
-         var url        = urlPerson + Storage.getItem(storageKey);
+         var url        = urlPerson + Storage.getItem(Storage.key(i));
          var fio        = "<a target=\"_blank\" href=\"" + url + "\">" + fioRow[0].innerText + "</a>";
          var row        = document.createElement("div");
          row.className  = (lastChars == "=1") ? 'green' : (lastChars == "=2")? 'blue':'red';
