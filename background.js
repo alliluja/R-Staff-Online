@@ -1,7 +1,7 @@
 /*
- * Плагин R-Style Staff OnLine
- * Автор  Раков Вениамин 
- * Дата   сентябрь 2018
+ * РџР»Р°РіРёРЅ R-Style Staff OnLine
+ * РђРІС‚РѕСЂ  Р Р°РєРѕРІ Р’РµРЅРёР°РјРёРЅ 
+ * Р”Р°С‚Р°   СЃРµРЅС‚СЏР±СЂСЊ 2018
  * e-mail rvs2201@yandex.ru
  */
 
@@ -9,7 +9,7 @@ var Storage = window.localStorage;
 const ON  = 1;
 const OFF = 0;
 
-function isConfig() //здесь делать проверки всех настроек, если не существует - создать
+function isConfig() //Р·РґРµСЃСЊ РґРµР»Р°С‚СЊ РїСЂРѕРІРµСЂРєРё РІСЃРµС… РЅР°СЃС‚СЂРѕРµРє, РµСЃР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ - СЃРѕР·РґР°С‚СЊ
 {
    if (!Storage.getItem("TrafficInspector"))
    {
