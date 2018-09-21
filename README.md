@@ -1,5 +1,5 @@
 # R-Staff-Online
-[Плагин для firefox:](https://addons.mozilla.org/ru/firefox/addon/r-style-staff-online/) 
+Плагин для firefox, chrome, opera
 
 Отображает кто находится на рабочем месте,
 
