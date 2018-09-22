@@ -1,18 +1,18 @@
 /*
- * Плагин R-Style Staff OnLine
- * Автор  Раков Вениамин 
- * Дата   сентябрь 2018
+ * РџР»Р°РіРёРЅ R-Style Staff OnLine
+ * РђРІС‚РѕСЂ  Р Р°РєРѕРІ Р’РµРЅРёР°РјРёРЅ 
+ * Р”Р°С‚Р°   СЃРµРЅС‚СЏР±СЂСЊ 2018
  * e-mail rvs2201@yandex.ru
  */
 
 function execFunc()
 {
-   setOnClickForButtons();//Добавляем обработчик на кнопки, с onClick не работает
+   setOnClickForButtons();//Р”РѕР±Р°РІР»СЏРµРј РѕР±СЂР°Р±РѕС‚С‡РёРє РЅР° РєРЅРѕРїРєРё, СЃ onClick РЅРµ СЂР°Р±РѕС‚Р°РµС‚
 
    var mainDoc = document.getElementById('fioList');
    for(let i = 0; i < Storage.length; i++)
-   {/*читаем хранилище*/
-      if (isUser(Storage.key(i))) //выводим всех пользователей
+   {/*С‡РёС‚Р°РµРј С…СЂР°РЅРёР»РёС‰Рµ*/
+      if (isUser(Storage.key(i))) //РІС‹РІРѕРґРёРј РІСЃРµС… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
       getData(urlPerson, Storage.key(i), function(xmlDoc)
       {
          var fioRow     = xmlDoc.getElementsByClassName("profile-table-row-value");
@@ -20,7 +20,7 @@ function execFunc()
          row.innerHTML  = '<label><input class = "chb" type=checkbox name ="' + Storage.getItem(Storage.key(i)) +'">' + fioRow[0].innerText + '</label>';
          mainDoc.appendChild(row);
       })
-      else //отмечаем настройки
+      else //РѕС‚РјРµС‡Р°РµРј РЅР°СЃС‚СЂРѕР№РєРё
       {
          var cfg           = Storage.getItem(Storage.key(i));
          var element       = document.getElementById(Storage.key(i));

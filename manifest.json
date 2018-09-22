@@ -1,9 +1,9 @@
-﻿{
+{
     "manifest_version": 2,
  
     "name": "R-Style Staff OnLine",
     "description": "Кто на работе, остаток траффика",
-    "version": "1.2.1",
+    "version": "1.2.3",
  
     "browser_action": {
         "default_icon": "icon.png",
@@ -18,5 +18,10 @@
     
     "background": {
         "scripts": ["background.js"]
+    },
+    "applications": {
+      "gecko": {
+        "update_url": "https://github.com/alliluja/R-Staff-Online/blob/self-hosted-version/updates.json"
+      }
     }
 }

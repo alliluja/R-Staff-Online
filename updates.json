@@ -1,0 +1,14 @@
+{
+   "addons": {
+     "addon@example.com": {
+       "updates": [
+         { "version": "1.2.1",
+           "update_link": "https://github.com/alliluja/R-Staff-Online/blob/self-hosted-version/all_xpi/r_style_staff_online-1.2.1.xpi" },
+         { "version": "1.2.2",
+           "update_link": "https://github.com/alliluja/R-Staff-Online/blob/self-hosted-version/all_xpi/r_style_staff_online-1.2.2.xpi" },
+         { "version": "1.2.3",
+           "update_link": "https://github.com/alliluja/R-Staff-Online/blob/self-hosted-version/all_xpi/r_style_staff_online-1.2.3.xpi" }
+       ]
+     }
+   }
+ }
