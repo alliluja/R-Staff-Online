@@ -3,7 +3,7 @@
  
     "name": "R-Style Staff OnLine",
     "description": "Кто на работе, остаток траффика",
-    "version": "1.2.3",
+    "version": "1.2.4",
  
     "browser_action": {
         "default_icon": "icon.png",
