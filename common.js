@@ -1,14 +1,14 @@
 /*
- * Плагин R-Style Staff OnLine
- * Автор  Раков Вениамин 
- * Дата   сентябрь 2018
+ * РџР»Р°РіРёРЅ R-Style Staff OnLine
+ * РђРІС‚РѕСЂ  Р Р°РєРѕРІ Р’РµРЅРёР°РјРёРЅ 
+ * Р”Р°С‚Р°   СЃРµРЅС‚СЏР±СЂСЊ 2018
  * e-mail rvs2201@yandex.ru
  */
 
 var   Storage        = window.localStorage;
 const userIdPrefix   = "RSuser";
 var   configArray    = ["TrafficInspector"];
-var   maxNum         = 10240; // Количество MB на месяц
+var   maxNum         = 10240; // РљРѕР»РёС‡РµСЃС‚РІРѕ MB РЅР° РјРµСЃСЏС†
 var   urlPerson      = "http://atlant/Staff/Person.aspx?PersonID=";
 var   urlInetstat    = "http://inetstat/result.php";
 const ON             = 1;
@@ -17,7 +17,7 @@ const OFF            = 0;
 function isUser(storageKey) {
    return (storageKey.substr(0,6) == userIdPrefix);
 }
-function setOnClickForButtons()//Добавляем обработчик на кнопки, с onClick не работает
+function setOnClickForButtons()//Р”РѕР±Р°РІР»СЏРµРј РѕР±СЂР°Р±РѕС‚С‡РёРє РЅР° РєРЅРѕРїРєРё, СЃ onClick РЅРµ СЂР°Р±РѕС‚Р°РµС‚
 {
    var Button = document.getElementById('addUser');
    Button.addEventListener('click', addUser); 
@@ -48,7 +48,7 @@ function addUser()
    }
    else
    {
-      alert('PersonID: "' + IDelem.value + '" не корректен. Введите число от 1 до 9999')
+      alert('PersonID: "' + IDelem.value + '" РЅРµ РєРѕСЂСЂРµРєС‚РµРЅ. Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 9999')
    }
 }
 

@@ -1,7 +1,7 @@
 /*
- * Плагин R-Style Staff OnLine
- * Автор  Раков Вениамин
- * Дата   сентябрь 2018
+ * РџР»Р°РіРёРЅ R-Style Staff OnLine
+ * РђРІС‚РѕСЂ  Р Р°РєРѕРІ Р’РµРЅРёР°РјРёРЅ
+ * Р”Р°С‚Р°   СЃРµРЅС‚СЏР±СЂСЊ 2018
  * e-mail rvs2201@yandex.ru
  */
 
@@ -17,7 +17,7 @@ function execFunc()
          var progressbar = document.getElementById('progress');
          progressbar.value = percent;
          var progressValue = document.getElementById('progress-value');
-         progressValue.innerHTML = "Остаток: " + Mb + "Mb, " + percent + "%";
+         progressValue.innerHTML = "РћСЃС‚Р°С‚РѕРє: " + Mb + "Mb, " + percent + "%";
       });
    }
    var mainDoc = document.getElementById('main');
